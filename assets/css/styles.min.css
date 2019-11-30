@@ -1,0 +1,98 @@
+html, body {
+  font-family: "Lato", sans-serif;
+  margin: 0;
+  max-width: 1600px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+nav div button {
+  background-color: transparent;
+  border: 1.5px #e19e2f solid;
+  border-radius: 20px;
+  color: #ffffff;
+  width: 30%;
+  line-height: 1.7;
+}
+
+#mainSection {
+  background-image: url(../images/bgHome.jpg);
+  background-size: cover;
+  height: 100vh;
+}
+
+/**
+ * Colores
+ */
+.c-orange {
+  color: #e19e2f;
+}
+
+.refContainer {
+  width: 40%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.refContainer a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.buttonContainer {
+  width: 30%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.title {
+  height: 80%;
+}
+.title div.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.title div.flex div.container-buttons {
+  width: 50%;
+  margin: auto;
+  text-align: center;
+  margin-top: 30px;
+}
+.title div.flex div.container-buttons button {
+  width: 60%;
+  line-height: 3;
+  background-color: #e19e2f;
+  color: #ffffff;
+  font-size: 15px;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.title div.flex div.container-buttons div {
+  width: 100%;
+  padding: 10px;
+}
+.title div.flex div.container-buttons div a {
+  color: #ffffff;
+  text-decoration: none;
+}
+.title h1 {
+  text-align: center;
+  color: #ffffff;
+  font-weight: normal;
+  width: 60%;
+  margin: auto;
+  font-size: 40pt;
+}
+
+/*# sourceMappingURL=styles.min.css.map */

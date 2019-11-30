@@ -1,0 +1,78 @@
+#info{
+    @include flexbox(column, center, center);
+    background-color: $bg-color;
+    margin: 0;
+    width: $m-100;
+}
+.charts{
+    @include flexbox(row, center, center);
+    flex-wrap: nowrap;
+    width: $m-80;
+    margin: 20px;
+}
+.description{
+    width: $m-50;
+    h2{
+        color: $white;
+        font-family: $tipo_general;
+        font-size: map-get($fs, large);
+        font-weight: 200;
+        text-align: center;
+    }
+    p{
+        color: $gray;
+        font-family: $tipo_general;
+        font-size: map-get($fs, normal);
+        font-weight: 100;
+        padding: 1em;
+    }
+}
+.img-chart{
+    width: $m-50;
+}
+.device{
+    color: $white;
+    font-family: $tipo_general;
+    font-size: map-get($fs, large);
+    font-weight: 100;
+    position: relative;
+    width: $m-100;
+    height: auto;
+    @include flexbox(row, center, center);
+    background-image: url('../images/bg-info.png');
+    background-size: auto;
+    background-position: 20%;
+    background-repeat: repeat-x;
+    margin-bottom: 40px;
+    a{
+        color: $white;
+        text-decoration: none;
+    }
+    a:hover{
+        color: $orange;
+    }
+}
+.lt-text{
+    position: absolute;
+    top: 40px;
+    left: 360px;
+}
+.rt-text{
+    position: absolute;
+    top: 90px;
+    right: 350px;
+}
+.lb-text{
+    position: absolute;
+    bottom: 100px;
+    left: 380px; 
+}
+.rb-text{
+    position: absolute;
+    bottom: 0px;
+    right: 250px;
+}
+.img-device{
+    height: 60vh;
+    width: auto;
+}

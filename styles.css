@@ -1,0 +1,237 @@
+#info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #232030;
+  margin: 0;
+  width: 100%;
+}
+
+.charts {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  width: 80%;
+  margin: 20px;
+}
+
+.description {
+  width: 50%;
+}
+.description h2 {
+  color: #ffffff;
+  font-family: "Lato", sans-serif;
+  font-size: 28px;
+  font-weight: 200;
+  text-align: center;
+}
+.description p {
+  color: #bbbabe;
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  font-weight: 100;
+  padding: 1em;
+}
+
+.img-chart {
+  width: 50%;
+}
+
+.device {
+  color: #ffffff;
+  font-family: "Lato", sans-serif;
+  font-size: 28px;
+  font-weight: 100;
+  position: relative;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../images/bg-info.png");
+  background-size: auto;
+  background-position: 20%;
+  background-repeat: repeat-x;
+  margin-bottom: 20px;
+}
+
+.lt-text {
+  position: absolute;
+  top: 40px;
+  left: 360px;
+}
+
+.rt-text {
+  position: absolute;
+  top: 90px;
+  right: 350px;
+}
+
+.lb-text {
+  position: absolute;
+  bottom: 100px;
+  left: 380px;
+}
+
+.rb-text {
+  position: absolute;
+  bottom: 0px;
+  right: 250px;
+}
+
+.img-device {
+  height: 60vh;
+  width: auto;
+}
+
+#footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #232030;
+  margin: 0;
+  width: 100%;
+}
+
+.container-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  color: #ffffff;
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  font-weight: 100;
+}
+.container-footer ul, .container-footer li {
+  text-decoration: none;
+  list-style: none;
+  padding-inline-start: 0;
+}
+
+.about h3, .questions h3, .contact h3, .comments h3 {
+  font-weight: 200;
+  text-align: center;
+}
+.about li, .questions li, .contact li, .comments li {
+  padding-inline-start: 0;
+}
+
+.copy {
+  color: #ffffff;
+  font-family: "Lato", sans-serif;
+  font-size: 12px;
+  padding: 0.5em;
+}
+
+html, body {
+  font-family: "Lato", sans-serif;
+  margin: 0;
+  max-width: 1600px;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+nav div button {
+  background-color: transparent;
+  border: 1.5px #e19e2f solid;
+  border-radius: 20px;
+  color: #ffffff;
+  width: 30%;
+  line-height: 1.7;
+}
+
+#mainSection {
+  background-image: url(../images/bgHome.jpg);
+  background-size: cover;
+  height: 100vh;
+}
+
+/**
+ * Colores
+ */
+.c-orange {
+  color: #e19e2f;
+}
+
+.refContainer {
+  width: 40%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.refContainer a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 13px;
+}
+.refContainer a:hover {
+  color: #e19e2f;
+}
+
+.buttonContainer {
+  width: 30%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.title {
+  height: 80%;
+}
+.title div.flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.title div.flex div.container-buttons {
+  width: 50%;
+  margin: auto;
+  text-align: center;
+  margin-top: 30px;
+}
+.title div.flex div.container-buttons button {
+  width: 60%;
+  line-height: 3;
+  background-color: #e19e2f;
+  color: #ffffff;
+  font-size: 15px;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.title div.flex div.container-buttons div {
+  width: 100%;
+  padding: 10px;
+}
+.title div.flex div.container-buttons div a {
+  color: #ffffff;
+  text-decoration: none;
+}
+.title h1 {
+  text-align: center;
+  color: #ffffff;
+  font-weight: normal;
+  width: 60%;
+  margin: auto;
+  font-size: 40pt;
+}
+
+/*# sourceMappingURL=styles.css.map */
