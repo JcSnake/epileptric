@@ -1,0 +1,85 @@
+.main-header{
+    background-color: $black;
+    margin: 0px;
+    @include flexbox ( row, space-between, center);
+    flex-wrap: wrap;
+}
+.containerNav{
+    flex: 1;
+    margin: 0 auto;
+    display: inherit;
+    height: inherit;
+    justify-content: inherit;
+    align-items: inherit;
+    flex-wrap: inherit;
+}
+.active{
+    display: none;
+}
+#menu{
+    color: $white;
+    height: inherit;
+}
+nav {
+    @include flexbox (row, space-between, center);
+    width: 100%;
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    div {
+        button {
+            background-color: transparent;
+            border: 1.5px $orange solid;
+            border-radius: 20px;
+            color: $white;
+            width: 30%;
+            line-height: 1.7;
+            outline: none;
+        }
+    }
+}
+.refContainer {
+    width: 40%;
+    @include flexbox(row, space-evenly, center);
+    
+    a {
+        color: $white;
+        text-decoration: none;
+        font-size: map-get($fs, menu );
+    }
+    a:hover{
+        color: $orange;
+    }
+}
+
+.buttonContainer {
+    width: 30%;
+    display: flex;
+    justify-content: space-evenly;
+    
+    button{
+        outline: none;
+        font-size: map-get($fs, menu);
+    }
+    button:hover{
+        background-color: $orange;
+        color: $black;
+    }
+}
+#burguer-menu{
+    outline: none;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    background-color: transparent;
+    color: $orange;
+    border: none;
+    display: none;
+    line-height: 30px !important;
+    text-align: center;
+    //position: fixed;
+    right: 5px;
+    top: 5px;
+    z-index: 5;
+}

@@ -19,11 +19,6 @@
     
 }
 .about, .questions, .contact, .comments{
-    h3{
-        font-size: map-get($fs, larger);
-        font-weight: 300;
-        text-align: center;
-    }
     li{
         padding-inline-start: 0;
         color: $gray;
@@ -33,6 +28,20 @@
         text-decoration: none;
     }
     a:hover{
+        color: $orange;
+    }
+}
+#about, #questions, #contact, #comments{
+    width: auto;
+    padding: 0;
+    color: $white;
+    font-family: $tipo_general;
+    font-size: map-get($fs, footer);
+    text-align: center;
+    border: none;
+    background-color: transparent;
+    outline: none;
+    &:hover{
         color: $orange;
     }
 }

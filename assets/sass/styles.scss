@@ -3,33 +3,18 @@
 @import "_mixins";
 @import "_dimensions";
 @import "_info";
-@import "footer";
+@import "_footer";
+@import "_nav";
+@import "_mediaqueries";
 
 html, body {
     font-family: $tipo_general;
     margin: 0;
     max-width: 1600px;
+    background-color: $black;
 }
 
-nav {
-    @include flexbox (row, space-between, center);
-    width: 100%;
-    margin: auto;
-    padding-top: 20px;
-    padding-bottom: 20px;
 
-    div {
-        button {
-            background-color: transparent;
-            border: 1.5px $orange solid;
-            border-radius: 20px;
-            color: $white;
-            width: 30%;
-            line-height: 1.7;
-            outline: none;
-        }
-    }
-}
 
 #mainSection {
     background-image: url(../images/bgHome.jpg);
@@ -45,45 +30,19 @@ nav {
     color: $orange;
 }
 
-.refContainer {
-    width: 40%;
-    @include flexbox(row, space-evenly, center);
-    a {
-        color: $white;
-        text-decoration: none;
-        font-size: 13px;
-    }
-    a:hover{
-        color: $orange;
-    }
-}
-
-.buttonContainer {
-    width: 30%;
-    display: flex;
-    justify-content: space-evenly;
-    button{
-        outline: none;
-    }
-    button:hover{
-        background-color: $orange;
-        color: $black;
-    }
-}
-
 .title {
     height: 80%;
     div.flex {
         @include flexbox(row, center, center);
         height: 100%;
-
+        flex: 1;
         div.container-buttons {
             width: $m-50;
             margin: auto;
             text-align: center;
             margin-top: 30px;
             button {
-                width: $m-60;
+                width: $m-70;
                 line-height: 3;
                 background-color: $orange;
                 color: $white;
