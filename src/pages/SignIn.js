@@ -13,12 +13,12 @@ class SignIn extends React.Component{
                         <input type="password" name="" id="" className="input-sign" placeholder = "Password" />
                         <div className="container-button">
                             <button className = "btn-form">Sign In</button>
-                            <span>
-                                Don't have an account? 
-                                <Link className = "link-form" to = "/signup"> Create one</Link>
-                            </span>
                         </div>
                     </form>
+                    <span>
+                        Don't have an account? 
+                        <Link className = "link-form" to = "/signup"> Create one</Link>
+                    </span>
                 </div>
             </>
         );

@@ -1,38 +1,53 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+
+import SignUpForm from '../components/SignUpForm';
+
+import '../assets/sass/forms.scss';
+
 class SignUp extends React.Component{
+    state = {
+        form:{
+          firstName: '',
+          lastNameP: '',
+          lastNameM: '',
+          birthday: '',
+          genre: '',
+          email: '',
+          password: ''
+        }
+      }
+      handleChange = e =>{
+        this.setState({
+          form:{
+            ...this.state.form,
+            [e.target.name] : e.target.value,
+          }
+        })
+      }
+      handleSubmit = e =>{
+        e.preventDefault();
+        console.log('Form was submitted');
+        console.log(this.state);
+      }
+      handleClick = e => {
+        console.log('Button was clicked');
+      };
     render(){
+        
+
         return(
             <>
                 <div className = "container-form">
-                    <form action="">
-                        <label>First Name: </label>
-                            <input type="text" name="firstName" id="" className="input-sign" placeholder = "Name" />
-                        <label>Last Name: </label>
-                            <input type="text" name="lastNameP" id="" className="input-sign" placeholder = "Last Name" />
-                            <input type="text" name="lastNameM" id="" className="input-sign" placeholder = "Last Name" />
-                        <label>Birthday: </label>
-                            <input 
-                                type="date" 
-                                name="birthday" 
-                                id="" 
-                                className = "input-sign"
-                                min = "01/01/1930"
-                            />
-                        <label>Genre: </label>
-                            <input list="genres" className="input-sign" name="genre" />
-                                <datalist id="genres">
-                                    <option value="Female"> Female </option>
-                                    <option value="Male"> Male </option>
-                                </datalist>
-                        <div className="container-button">
-                            <button className = "btn-form">Sign Up</button>
-                            <span>
-                                Already have an account? 
-                                <Link className = "link-form" to = "/signup"> Sign In</Link>
-                            </span>
-                        </div>
-                    </form>
+                    <SignUpForm
+                        onChange={this.handleChange}
+                        onSubmit={this.handleSubmit}
+                        formValues={this.state.form}
+                    />
+                    <span className= "span-up">
+                        Already have an account? 
+                        <Link className = "link-form" to = "/signin"> Sign In</Link>
+                    </span>
                 </div>
             </>
         );
