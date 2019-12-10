@@ -8,26 +8,26 @@ class Info extends React.Component{
         return(
             <>
                 <section id="info">
-                    <div class="charts">
-                        <div class="description">
+                    <div className="charts">
+                        <div className="description">
                             <h2>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic, aperiam.</h2>
                             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta minima maxime aspernatur 
                             fuga modi explicabo voluptates perspiciatis suscipit quisquam architecto!</p>
                         </div>
-                        <img src={chart} alt="graph" class="img-chart" />
+                        <img src={chart} alt="graph" className="img-chart" />
                     </div>
-                    <div class="device">
-                        <img src={deviceImg} alt="smartwatch" class="img-device" />
-                        <div class="lt-text">
+                    <div className="device">
+                        <img src={deviceImg} alt="smartwatch" className="img-device" />
+                        <div className="lt-text">
                             water proof
                         </div>
-                        <div class="rt-text">
+                        <div className="rt-text">
                             cool charts
                         </div>
-                        <div class="lb-text">
+                        <div className="lb-text">
                             sensors
                         </div>
-                        <div class="rb-text">
+                        <div className="rb-text">
                             ...and more amazing features
                         </div>
                     </div>
