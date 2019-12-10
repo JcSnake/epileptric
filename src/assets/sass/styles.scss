@@ -1,0 +1,78 @@
+@import "_fonts";
+@import "_colors";
+@import "_mixins";
+@import "_dimensions";
+@import "_info";
+@import "_footer";
+@import "_nav";
+@import "_mediaqueries";
+
+html, body {
+    font-family: $tipo_general;
+    margin: 0;
+    max-width: 1600px;
+    background-color: $black;
+}
+
+
+
+#mainSection {
+    background-image: url('../img/bgHome.jpg');
+    background-size: cover;
+    height: 100vh;
+}
+
+/**
+ * Colores
+ */
+
+.c-orange {
+    color: $orange;
+}
+
+.title {
+    height: 80%;
+    div.flex {
+        @include flexbox(row, center, center);
+        height: 100%;
+        flex: 1;
+        div.container-buttons {
+            width: $m-50;
+            margin: auto;
+            text-align: center;
+            margin-top: 30px;
+            button {
+                width: $m-70;
+                line-height: 3;
+                background-color: $orange;
+                color: $white;
+                font-size: 15px;
+                text-transform: uppercase;
+                border: none;
+                border-radius: 20px;
+                cursor: pointer;
+                outline: none;
+            }
+            div {
+                width: $m-100;
+                padding: 10px;
+                a {
+                    color: $white;
+                    text-decoration: none;
+                }
+                a:hover{
+                    color: $orange;
+                }
+            }
+        }
+    }
+
+    h1 {
+        text-align: center;
+        color: $white;
+        font-weight: normal;
+        width: 60%;
+        margin: auto;
+        font-size: $f_20;
+    }
+}
