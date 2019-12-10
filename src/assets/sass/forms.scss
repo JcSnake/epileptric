@@ -2,3 +2,70 @@
 @import "_colors";
 @import "_mixins";
 @import "_dimensions";
+
+.container-form{
+    @include flexbox( column, center, center);
+    flex-wrap: wrap;
+    padding: 1em;
+    width: 100vw;
+    height: 60vh;
+    font-family: $tipo_general;
+    font-size: map-get($fs, normal);
+    label{
+        font-size: map-get($fs, small);
+        color: $white;
+        margin-bottom: .3em;
+        padding-bottom: .2em;
+    }
+}
+
+.input-sign{
+    display: block;
+    width: 30vw;
+    margin-bottom: .5em;
+    padding: .3em;
+    border: none;
+    border-bottom: 2px solid $orange;
+    outline: none;
+    background-color: $white;
+    color: $black;
+    font-family: $tipo_general;
+    font-size: map-get($fs, normal);
+    
+}
+
+.container-button{
+    width: 100%;
+    margin: 1em 0;
+    @include flexbox(column, center, center);
+    span{
+        color: $white;
+        font-size: map-get($fs, small);
+        padding: 1em;
+    }
+    .link-form{
+        color: $white;
+        text-decoration: none;
+        outline: none;
+        font-weight: 600;
+    }
+    .link-form:hover{
+        color:$orange;
+    }
+}
+
+.btn-form{
+    cursor: pointer;
+    outline: none;
+    border-radius: 20px;
+    border: none;
+    text-transform: uppercase;
+    text-align: center;
+    align-self: center;
+    color: $white;
+    background-color: $orange;
+    width: 20vw;
+    padding: .3em;
+    font-family: $tipo_general;
+    font-size: map-get($fs, normal);
+}
