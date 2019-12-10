@@ -39,7 +39,7 @@ class Footer extends React.Component{
                     </div>
                 </div>
                 <div className="copy">
-                    © 2019 Epileptrik Inc. All rights reserved.
+                    © 2019 Epileptric Inc. All rights reserved.
                 </div>
             </section>
         );

@@ -57,8 +57,14 @@ nav {
     width: 30%;
     display: flex;
     justify-content: space-evenly;
-    
+}
+.btn-nav{
+    display: flex;
+    justify-content: space-evenly;
+    width: 30%;
+    text-decoration: none;
     button{
+        width: 100%;
         outline: none;
         font-size: map-get($fs, menu);
     }

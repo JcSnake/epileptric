@@ -10,7 +10,7 @@ class Hero extends React.Component{
                             <h1>Learn. Control. <span className="c-orange">Epilepsy</span> in the power of your wrist</h1>
                             <div className="container-buttons">
                                 <button className="btn-main">Learn more with us</button>
-                                <div><a href="#">Sing in</a></div>
+                                <div><a href="#">Sign in</a></div>
                             </div>
                         </div>
                     </div>
