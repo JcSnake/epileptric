@@ -1,8 +1,12 @@
 .main-header{
     background-color: $black;
-    margin: 0px;
+    margin: 0 2vw;
     @include flexbox ( row, space-between, center);
-    flex-wrap: wrap;
+    flex-wrap: no-wrap;
+}
+.logo{
+    width: 125px;
+    height: auto;
 }
 .containerNav{
     flex: 1;
@@ -15,14 +19,22 @@
 }
 .active{
     display: none;
+    img{
+        width: 125px;
+        height: auto;
+    }
+    .aslink{
+        text-decoration: none;
+        outline: none;
+    }
 }
 #menu{
     color: $white;
     height: inherit;
 }
 nav {
-    @include flexbox (row, space-between, center);
-    width: 100%;
+    @include flexbox (row, center, center);
+    width: 100vw;
     margin: auto;
     padding-top: 20px;
     padding-bottom: 20px;

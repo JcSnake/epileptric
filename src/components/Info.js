@@ -1,6 +1,7 @@
 import React from 'react';
 
-import chart from '../assets/img/charts.png';
+import chart from '../assets/img/chart-1.svg';
+import chartPie from '../assets/img/chart-2.svg';
 import deviceImg from '../assets/img/smart-watch.png';
 
 class Info extends React.Component{
@@ -10,11 +11,16 @@ class Info extends React.Component{
                 <section id="info">
                     <div className="charts">
                         <div className="description">
-                            <h2>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic, aperiam.</h2>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta minima maxime aspernatur 
-                            fuga modi explicabo voluptates perspiciatis suscipit quisquam architecto!</p>
+                            <h2>We have some awesome graphs...</h2>
+                            <p>So you can control your patient's list of episodes, 
+                            the data showed comes from our super special devices 
+                            (description below)</p>
+                            <p>We have a linear chart and some comes with pie.</p>
                         </div>
-                        <img src={chart} alt="graph" className="img-chart" />
+                        <div className="charts-img">
+                            <img src={chart} alt="graph" className="img-chart" />
+                            <img src={chartPie} alt="graph" className="img-chart" />
+                        </div>
                     </div>
                     <div className="device">
                         <img src={deviceImg} alt="smartwatch" className="img-device" />

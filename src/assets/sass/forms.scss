@@ -7,6 +7,35 @@
     @include flexbox( column, center, center);
     flex-wrap: wrap;
     padding: 1em;
+    width: 100%;
+    height: auto;
+    font-family: $tipo_general;
+    font-size: map-get($fs, normal);
+    label{
+        font-size: map-get($fs, small);
+        color: $white;
+        margin-bottom: .3em;
+        padding-bottom: .2em;
+    }
+    span{
+        color: $white;
+        font-size: map-get($fs, small);
+        padding: 1em;
+        .link-form{
+            color: $white;
+            text-decoration: none;
+            outline: none;
+            font-weight: 600;
+        }
+        .link-form:hover{
+            color:$orange;
+        }
+    }
+}
+.container-form-s{
+    @include flexbox( column, center, center);
+    flex-wrap: wrap;
+    padding: 1em;
     width: 100vw;
     height: 70vh;
     font-family: $tipo_general;

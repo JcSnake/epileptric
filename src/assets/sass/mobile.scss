@@ -7,7 +7,7 @@
     position: fixed;
     width: 36px;
     height: 30px;
-    left: 36px;
+    right: 36px;
     top: 36px;
   }
   
@@ -92,4 +92,15 @@
   
   .bm-overlay {
     background:  rgba(46, 40, 67, .8)!important;
+  }
+
+  .link{
+    color: $white;
+    text-decoration: none;
+    &:hover{
+      color:$orange;
+    }
+    .btn{
+      width: 300px;
+    }
   }

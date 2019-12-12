@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 
 class Hero extends React.Component{
     render(){
@@ -9,8 +10,8 @@ class Hero extends React.Component{
                         <div className="containerTitle">
                             <h1>Learn. Control. <span className="c-orange">Epilepsy</span> in the power of your wrist</h1>
                             <div className="container-buttons">
-                                <button className="btn-main">Learn more with us</button>
-                                <div><a href="#">Sign in</a></div>
+                                <button className="btn-main"><Link to ="/about">Learn more with us</Link></button>
+                                <div><Link to="/signin">Sign in</Link></div>
                             </div>
                         </div>
                     </div>

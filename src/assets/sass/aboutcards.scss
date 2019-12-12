@@ -1,0 +1,66 @@
+@import "_fonts";
+@import "_colors";
+@import "_mixins";
+@import "_dimensions";
+
+.card-container{
+    @include flexbox(row, center, center);
+    flex-wrap: wrap;
+    width: 80%;
+    
+    .card-profile{
+        color: $black;
+        width: 300px;
+        height: 400px;
+        margin-left: 2em;
+        padding: .2em;
+        display: inherit;
+        flex-direction: column;
+        text-align: center;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        background-color: $white;
+        img{
+            width: 100%;
+            height: auto;
+        }
+    }
+    h3{
+        font-weight: 200;
+        font-size: map-get($fs, large);
+    }
+
+    .title{
+        color: $orange;
+        font-family: $tipo_general;
+        font-size: map-get($fs, normal);
+        font-weight: 200;
+        margin: 0;
+    }
+    button {
+        border: none;
+        outline: 0;
+        display: inline-block;
+        padding: 8px;
+        color: $white;
+        background-color: $black;
+        text-align: center;
+        cursor: pointer;
+        width: 100%;
+        font-size: map-get($fs, normal);
+    }
+    a{
+        text-decoration: none;
+        font-size: map-get($fs, normal);
+        color: $white;
+        
+    }
+    button:hover, a:hover{
+        opacity: 0.7;
+    }
+    .git{
+        width: 20px !important;
+        height: auto;
+        
+    }
+
+}

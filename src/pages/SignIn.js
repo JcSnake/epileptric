@@ -7,7 +7,7 @@ class SignIn extends React.Component{
     render(){
         return(
             <>
-                <div className = "container-form">
+                <div className = "container-form-s">
                     <form action="">
                         <input type="email" name="" id="" className="input-sign" placeholder = "E-mail" />
                         <input type="password" name="" id="" className="input-sign" placeholder = "Password" />

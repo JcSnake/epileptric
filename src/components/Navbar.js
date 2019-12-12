@@ -1,8 +1,10 @@
 import React from 'react';
 import { slide as MenuHamburguesa } from 'react-burger-menu';
+import { Link } from 'react-router-dom';
 
 import Menu from './Menu';
 
+import logo from '../assets/img/logo-epileptric.png';
 import '../assets/sass/mobile.scss';
 import '../assets/sass/styles.scss';
 
@@ -28,9 +30,9 @@ class Navbar extends React.Component{
           <>
             <i className="fa fa-bars fa-lg burguer-button" id = "burguer-menu" onClick={() => this.toggleMenu()}></i>
             <header className="main-header">
+              <Link to="/" ><img src={logo} className="logo" alt=""/></Link>
                 <div className="containerNav">
                     <Menu />
-                    <div className="active">Epileptrik</div>
                     <MenuHamburguesa right disableAutoFocus
                         isOpen={this.state.menuOpen}
                         onStateChange={(state) => this.handleStateChange(state)}
@@ -52,8 +54,4 @@ class Navbar extends React.Component{
       }
 }
 
-
 export default Navbar;
-
-
-

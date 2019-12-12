@@ -66,7 +66,7 @@ class SignUpForm extends React.Component {
             />
         <label>Password: </label>
             <input 
-                type="text" 
+                type="password" 
                 name="password"
                 className="input-sign" 
                 placeholder = "Password"

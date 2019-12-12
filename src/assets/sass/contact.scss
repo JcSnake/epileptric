@@ -1,0 +1,63 @@
+@import "_fonts";
+@import "_colors";
+@import "_mixins";
+@import "_dimensions";
+
+.contact-container{
+    @include flexbox(row, center, center);
+    flex-wrap: nowrap;
+    height: 70vh;
+}
+.message{
+    width: 40vw;
+    text-align: center;
+    color: $white;
+    font-family: $tipo_general;
+    font-size: map-get($fs, large);
+    font-weight: 100;
+    margin: 1em 1em;
+    span{
+        color: $orange;
+    }
+}
+@media screen and (max-width: 500px){
+    .contact-container{
+        flex-wrap: wrap;
+    }
+    .message{
+        width: 100vw;
+    }
+    .contact-form{
+        width: 100vw;
+    }
+  }
+.contact-form{
+    width: 60vw;
+    @include flexbox( column, center, center);
+    flex-wrap: wrap;
+    padding: 1em;
+    width: 100%;
+    height: auto;
+    font-family: $tipo_general;
+    font-size: map-get($fs, normal);
+    label{
+        font-size: map-get($fs, small);
+        color: $white;
+        margin-bottom: .3em;
+        padding-bottom: .2em;
+    }
+    span{
+        color: $white;
+        font-size: map-get($fs, small);
+        padding: 1em;
+        .link-form{
+            color: $white;
+            text-decoration: none;
+            outline: none;
+            font-weight: 600;
+        }
+        .link-form:hover{
+            color:$orange;
+        }
+    }
+}

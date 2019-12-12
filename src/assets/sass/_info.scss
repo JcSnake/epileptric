@@ -27,9 +27,14 @@
         padding: 1em;
     }
 }
-.img-chart{
+.charts-img{
     width: $m-50;
+    @include flexbox(row, center, center);
+    .img-chart{
+        margin: 2em;
+    }
 }
+
 .device{
     color: $white;
     font-family: $tipo_general;
