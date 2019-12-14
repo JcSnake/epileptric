@@ -20,19 +20,11 @@ class SignUpForm extends React.Component {
         <label>Last Name: </label>
             <input 
                 type="text" 
-                name="lastNameP"
+                name="lastName"
                 className="input-sign" 
                 placeholder = "Last Name"
                 onChange= {this.props.onChange}
-                value={this.props.formValues.lastNameP}
-            />
-            <input 
-                type="text" 
-                name="lastNameM"
-                className="input-sign" 
-                placeholder = "Last Name" 
-                onChange= {this.props.onChange}
-                value={this.props.formValues.lastNameM}
+                value={this.props.formValues.lastName}
             />
         <label>Birthday: </label>
             <input 
@@ -43,15 +35,15 @@ class SignUpForm extends React.Component {
                 onChange= {this.props.onChange}
                 value={this.props.formValues.birthday}
             />
-        <label>Genre: </label>
+        <label>Gender: </label>
             <input 
-                list="genres" 
+                list="gender" 
                 className="input-sign" 
-                name="genre" 
+                name="gender" 
                 onChange= {this.props.onChange}
-                value={this.props.formValues.genre}
+                value={this.props.formValues.gender}
                 />
-                <datalist id="genres">
+                <datalist id="gender">
                     <option value="Female"> Female </option>
                     <option value="Male"> Male </option>
                 </datalist>

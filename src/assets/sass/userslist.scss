@@ -1,0 +1,36 @@
+@import "_fonts";
+@import "_colors";
+@import "_mixins";
+@import "_dimensions";
+.user-table{
+    @include flexbox ( column, center, center);
+    background-color: $white;
+    width: 50%;
+    height: auto;
+    .user-card{
+        display: inherit;
+        flex-direction: row;
+        justify-content: flex-start;
+        padding: .5em;
+        color: $black;
+        font-family: $tipo_general;
+        font-size: map-get($fs, normal);
+        strong{
+            color: $orange;
+        }
+    }
+    .link-user{
+        text-decoration: none;
+        outline: none;
+    }
+    h4{
+        color: $black;
+        font-size: map-get($fs, larger);
+        font-weight: 200;
+    }
+    ul, li{
+        list-style: none;
+        margin: 0;
+    }
+    
+}

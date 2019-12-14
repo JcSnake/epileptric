@@ -7,12 +7,13 @@ import '../assets/sass/forms.scss';
 
 class SignUp extends React.Component{
     state = {
+        loading: false,
+        error: null,
         form:{
           firstName: '',
-          lastNameP: '',
-          lastNameM: '',
+          lastName: '',
           birthday: '',
-          genre: '',
+          gender: '',
           email: '',
           password: ''
         }
@@ -25,14 +26,23 @@ class SignUp extends React.Component{
           }
         })
       }
-      handleSubmit = e =>{
+      handleSubmit = async e =>{
         e.preventDefault();
-        console.log('Form was submitted');
-        console.log(this.state);
+        this.setState({
+          loading: true,
+          error: null
+        })
+        try{
+          this.setState({loading: false});
+          //this.props.history.push('/users');
+        }catch(error){
+          this.setState({
+            loading: false,
+            error: error
+          })
+          console.log(error);
+        }
       }
-      handleClick = e => {
-        console.log('Button was clicked');
-      };
     render(){
         
 
