@@ -1,0 +1,106 @@
+@import "_fonts";
+@import "_colors";
+@import "_dimensions";
+
+html, body {
+    font-family: $tipo_general;
+    margin: 0;
+    max-width: 1600px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    div {
+        button {
+            background-color: transparent;
+            border: 1.5px $orange solid;
+            border-radius: 20px;
+            color: $white;
+            width: 30%;
+            line-height: 1.7;
+        }
+    }
+}
+
+#mainSection {
+    background-image: url(../images/bgHome.jpg);
+    background-size: cover;
+    height: 100vh;
+}
+
+/**
+ * Colores
+ */
+
+.c-orange {
+    color: $orange;
+}
+
+.refContainer {
+    width: 40%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    a {
+        color: $white;
+        text-decoration: none;
+        font-size: 13px;
+    }
+}
+
+.buttonContainer {
+    width: 30%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.title {
+    height: 80%;
+    div.flex {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+
+        div.container-buttons {
+            width: $m-50;
+            margin: auto;
+            text-align: center;
+            margin-top: 30px;
+            button {
+                width: $m-60;
+                line-height: 3;
+                background-color: $orange;
+                color: $white;
+                font-size: 15px;
+                text-transform: uppercase;
+                border: none;
+                border-radius: 20px;
+                cursor: pointer;
+            }
+            div {
+                width: $m-100;
+                padding: 10px;
+                a {
+                    color: $white;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+
+    h1 {
+        text-align: center;
+        color: $white;
+        font-weight: normal;
+        width: 60%;
+        margin: auto;
+        font-size: $f_20;
+    }
+}
