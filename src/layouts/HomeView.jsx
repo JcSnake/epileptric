@@ -4,9 +4,11 @@ import NotificationSystem from "react-notification-system";
 
 import Footer from "components/Footer/Footer";
 import Sidebar from "components/Sidebar/Sidebar";
+import Login from '../views/Login';
+import SignUp from '../views/SignUp';
 
 import { style } from "variables/Variables.jsx";
-
+import '../assets/sass/lbd/login.scss';
 import routes from "routes.js";
 
 import image from "assets/img/sidebar-3.jpg";
@@ -132,17 +134,16 @@ class HomeView extends Component {
         <Sidebar {...this.props} routes={routes} image={this.state.image}
         color={this.state.color}
         hasImage={this.state.hasImage}/>
-        <div id="main-panel" className="main-panel" ref="mainPanel">
-          <div className="container">
-          <div className="row align-items-center justify-content-center">
-            <div className="col-lg-6 col-md-6 col align-self-center">
-              <h3>Inicia Sesión</h3>
+        <div className="container log">
+          <div className="row justify-content-center">
+            <div className="col-lg-6 col-md-6 col login">
+              <h5>Inicia Sesión</h5>
+              <Login />
             </div>
-            <div className="col-lg-6 cold-md-6 col align-self-center">
-              <h3>Registrate</h3>
+            <div className="col-lg-6 cold-md-6 col login">
+              <h5>Registrate</h5>
+              <SignUp />
             </div>
-          </div>
-          
         </div>
           <Switch>{this.getRoutes(routes)}</Switch>
           <Footer />

@@ -12,6 +12,8 @@ import "./assets/css/pe-icon-7-stroke.css";
 import AdminLayout from "layouts/Admin.jsx";
 import HomeView from "layouts/HomeView";
 
+import firebase from './firebase';
+
 ReactDOM.render(
   <BrowserRouter>
     <Switch>

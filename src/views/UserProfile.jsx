@@ -14,9 +14,21 @@ import { UserCard } from "components/UserCard/UserCard.jsx";
 import Button from "components/CustomButton/CustomButton.jsx";
 
 import avatar from "assets/img/faces/avatar.png";
+import firebase from '../firebase';
 
 class UserProfile extends Component {
+  state = {
+    name : '',
+    lastName : '',
+    email: ''
+  }
+  async componentDidMount() {
+    const id = localStorage.getItem('uid');
+    const doctor = await firebase.firestore().collection('doctors').doc(id).get()
+    this.setState({ ...doctor.data()});
+  }
   render() {
+    const { name, lastName, email } = this.state;
     return (
       <div className="content">
         <Grid fluid>
@@ -47,29 +59,22 @@ class UserProfile extends Component {
                       ]}
                     />
                     <FormInputs
-                      ncols={["col-md-4", "col-md-4", "col-md-4"]}
+                      ncols={["col-md-4", "col-md-4"]}
                       properties={[
                         {
                           label: "Nombre(s)",
                           type: "text",
                           bsClass: "form-control",
                           placeholder: "Nombre(s)",
-                          defaultValue: "Gerardo"
+                          value: `${name}`
                         },
                         {
-                          label: "Apellido Paterno",
+                          label: "Apellidos",
                           type: "text",
                           bsClass: "form-control",
                           placeholder: "A. paterno",
-                          defaultValue: "Ramos"
+                          value: `${lastName}`
                         },
-                        {
-                          label: "Apellido Materno",
-                          type: "text",
-                          bsClass: "form-control",
-                          placeholder: "A. materno",
-                          defaultValue: "Flores"
-                        }
                       ]}
                     />
                     <FormInputs
@@ -139,14 +144,14 @@ class UserProfile extends Component {
             <Col md={4}>
               <UserCard
                 bgImage="https://ununsplash.imgix.net/photo-1431578500526-4d9613015464?fit=crop&fm=jpg&h=300&q=75&w=400"                
-                avatar={avatar}
-                name="Gerardo Ramos"
-                userName="@jerry"
+                avatar="https://picsum.photos/200"
+                name={`${name} ${lastName}`}
+                userName={email}
                 description={
                   <span>
-                    "Toma el riesgo
+                    lorem
                     <br />
-                    o pierde la oportunidad"                  
+                    ipsu                 
                   </span>
                 }
                 socials={

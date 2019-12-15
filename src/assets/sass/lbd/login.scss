@@ -1,0 +1,19 @@
+.log{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    width: 100%;
+    margin: 1em;
+}
+.login{
+    width: 100%;
+    input{
+        margin: .5em 0;
+    }
+    .btn-log{
+        border: 1px solid  #e19e2f;
+        border-radius: 15px;
+    }
+}
