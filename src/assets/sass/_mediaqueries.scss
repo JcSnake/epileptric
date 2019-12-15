@@ -1,0 +1,237 @@
+@media screen and (max-width: 768px){
+    #burguer-menu{
+        display: block!important;
+        position: fixed;
+    }
+    .main-header{
+        display: block;
+        height: auto;
+    }
+    .active{
+        display: block;
+        position: fixed;
+        z-index: 5;
+        left: 0;
+        top: 0;
+        width: auto;
+        height: 20px;
+        padding: .5em;
+        background-color: $orange;
+        color: $black;
+    }
+    .refContainer, .buttonContainer {
+        flex-direction: column;
+        padding-bottom: 3vh;
+    }
+    .buttonContainer{
+        justify-content: center;
+        align-items: center;
+        
+        button{
+            width: 300px;
+            @include flexbox(row, center, center);
+            outline: none;
+            font-size: map-get($fs, large);
+            margin-bottom: 1em;
+        }
+        button:hover{
+            background-color: $orange;
+            color: $black;
+        }
+    }
+    .refContainer {
+
+        justify-content: center;
+        align-items: center;
+        div{
+            display: initial;
+            height: auto;
+        }
+        a {
+            color: $white;
+            text-decoration: none;
+            font-size: map-get($fs, large);
+        }
+        a:hover{
+            color: $orange;
+        }
+    }
+    #menu{
+        position: fixed;
+        background-color: rgba(46, 40, 67, .8);
+        z-index: 4;
+        top: 0;
+        right: -100vw;
+        bottom: 0;
+        width: 100vw;
+        height: 100vh;
+        @include flexbox(column, center, center);
+        transition: .3s;
+    }
+    #menu.is-active{
+        right: 0;
+    }
+    #mainSection {
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .title{
+        div.flex{
+            z-index:2;
+        }
+    }
+    .device{
+        background-position: center;
+        background-repeat: no-repeat;
+        margin-bottom: 40px;
+    }
+    .lt-text{
+        position: absolute;
+        z-index: 3;
+        top: 40px;
+        left: 60px;
+    }
+    .rt-text{
+        position: absolute;
+        z-index: 3;
+        top: 90px;
+        right: 50px;
+    }
+    .lb-text{
+        position: absolute;
+        z-index: 3;
+        bottom: 100px;
+        left: 80px; 
+    }
+    .rb-text{
+        position: absolute;
+        z-index: 3;
+        bottom: -15px;
+        right: 50px;
+    }
+    .img-device{
+        height: 30vh;
+        width: auto;
+    }
+}
+@media screen and (max-width: 600px){
+    .title div.flex div.container-buttons button {
+        width: 80% !important;
+    }
+    .charts{
+        width: $m-100;
+        flex-wrap: wrap;
+    }
+    .description{
+        width: $m-100;
+    }
+    .img-chart{
+        width: $m-80;
+    }
+    .lt-text{
+        top: 20px;
+        left: 40px;
+    }
+    .rt-text{
+        top: 50px;
+        right: 10px;
+    }
+    .lb-text{
+        bottom: 100px;
+        left: 20px; 
+    }
+    .rb-text{
+        bottom: -15px;
+        right: 50px;
+    }
+    .img-device{
+        height: 25vh;
+        width: auto;
+    }
+
+}
+@media screen and (max-width: 520px){
+    .img-chart{
+        width: $m-60;
+    }
+    .about{
+        ul{
+            display:none;
+        }
+    }
+    .questions{
+        ul{
+            display:none;
+        }
+    }
+    .contact{
+        ul{
+            display:none;
+        }
+    }
+    .comments{
+        ul{
+            display:none;
+        }
+    }
+    .about ul.is-active{
+        display:block;
+        margin-block-start: 0;
+        margin-block-end: 0;
+    }
+    .questions ul.is-active{
+        display:block;
+        margin-block-start: 0;
+        margin-block-end: 0;
+    }
+    .contact ul.is-active{
+        display:block;
+        margin-block-start: 0;
+        margin-block-end: 0;
+    }
+    .comments ul.is-active{
+        display:block;
+        margin-block-start: 0;
+        margin-block-end: 0;
+    }
+    .lt-text{
+        top: 0px;
+        left: 40px;
+    }
+    .rt-text{
+        top: 0px;
+        right: 10px;
+    }
+    .lb-text{
+        bottom: 0px;
+        left: 20px; 
+    }
+    .rb-text{
+        bottom: -15px;
+        right: 30px;
+    }
+    .img-device{
+        height: 25vh;
+        width: auto;
+    }
+}
+@media screen and (max-width: 500px){
+    .title div.flex div.container-buttons button {
+        width: 60vw !important;
+    }
+    .img-device{
+        height: 15vh;
+        width: auto;
+    }
+    .lt-text{
+        top: -10px;
+    }
+    .rt-text{
+        top: -10px;
+        right: 10px;
+    }
+    .rb-text{
+        bottom: -25px;
+        right: 0px;
+    }
+}

@@ -1,0 +1,53 @@
+#footer{
+    @include flexbox(column, space-between, center);
+    background-color: $bg-color;
+    margin: 0;
+    width: $m-100;
+}
+.container-footer{
+    @include flexbox(row, space-between, center);
+    width: $m-80;
+    color: $white;
+    font-family: $tipo_general;
+    font-size: map-get($fs, normal);
+    font-weight: 100;
+    ul, li{
+        text-decoration: none;
+        list-style:none;
+        padding-inline-start: 0;
+    }
+    
+}
+.about, .questions, .contact, .comments{
+    li{
+        padding-inline-start: 0;
+        color: $gray;
+    }
+    a{
+        color: $white;
+        text-decoration: none;
+    }
+    a:hover{
+        color: $orange;
+    }
+}
+#about, #questions, #contact, #comments{
+    width: auto;
+    padding: 0;
+    color: $white;
+    font-family: $tipo_general;
+    font-size: map-get($fs, footer);
+    text-align: center;
+    border: none;
+    background-color: transparent;
+    outline: none;
+    &:hover{
+        color: $orange;
+    }
+}
+.copy{
+    color: $white;
+    font-family: $tipo_general;
+    font-size: map-get($fs, small);
+    padding: .5em;
+}

@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "epileptric-2aac3"
+  },
+  "targets": {
+    "epileptric-2aac3": {
+      "hosting": {
+        "landing": [
+          "epileptric"
+        ]
+      }
+    }
+  }
+}

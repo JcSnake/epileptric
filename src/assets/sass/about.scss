@@ -1,0 +1,41 @@
+@import "_fonts";
+@import "_colors";
+@import "_mixins";
+@import "_dimensions";
+
+.about-container{
+    @include flexbox( column, center, center);
+    flex-wrap: nowrap;
+    width: 100%;
+    height: 70%;
+    color: $white;
+    font-family: $tipo_general;
+    font-size: map-get($fs, normal);
+    h2{
+        color: $orange;
+        text-transform: uppercase;
+        font-size: map-get($fs, large);
+        font-weight: 200;
+    }
+    h5{
+        color: $orange;
+        text-transform: uppercase;
+        font-size: map-get($fs, normal);
+        font-weight: 200;
+    }
+    a{
+        text-decoration: none;
+        outline: none;
+    }
+    a:hover{
+        color:$orange;
+    }
+    .text{
+        display: inherit;
+        flex-direction: row;
+        font-weight: 100;
+        font-size: map-get($fs, normal);
+        color: $white;
+    }
+    
+}
