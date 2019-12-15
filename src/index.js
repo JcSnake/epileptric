@@ -10,12 +10,14 @@ import "./assets/css/demo.css";
 import "./assets/css/pe-icon-7-stroke.css";
 
 import AdminLayout from "layouts/Admin.jsx";
+import HomeView from "layouts/HomeView";
 
 ReactDOM.render(
   <BrowserRouter>
     <Switch>
+      <Route path="/home" render={props => <HomeView {...props} />} />
       <Route path="/admin" render={props => <AdminLayout {...props} />} />
-      <Redirect from="/" to="/admin/dashboard" />
+      <Redirect from="/" to="/home" />
     </Switch>
   </BrowserRouter>,
   document.getElementById("root")

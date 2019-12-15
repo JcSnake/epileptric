@@ -1,4 +1,5 @@
 import Dashboard from "views/Dashboard.jsx";
+import Home from "views/Home.jsx";
 import UserProfile from "views/UserProfile.jsx";
 import TableList from "views/TableList.jsx";
 import Typography from "views/Typography.jsx";
@@ -9,9 +10,16 @@ import Upgrade from "views/Upgrade.jsx";
 
 const dashboardRoutes = [
   {
-    path: "/dashboard",
+    path: "/home",
     name: "Home",
     icon: "pe-7s-home",
+    component: Home,
+    layout: "/homeview"
+  },
+  {
+    path: "/dashboard",
+    name: "Mi Dashboard",
+    icon: "pe-7s-notebook",
     component: Dashboard,
     layout: "/admin"
   },
