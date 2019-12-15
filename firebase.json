@@ -1,5 +1,6 @@
 {
   "hosting": {
+    "site": "dashboard-epileptric",
     "public": "build",
     "ignore": [
       "firebase.json",

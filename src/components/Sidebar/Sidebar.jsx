@@ -40,7 +40,7 @@ class Sidebar extends Component {
           )}
         <div className="logo">
           <a
-            href="https://epileptric-2aac3.firebaseapp.com/"
+            href="https://epileptric-2aac3.web.app/#about"
             className="simple-text logo-mini"
           >
             <div className="logo-img">
@@ -48,7 +48,7 @@ class Sidebar extends Component {
             </div>
           </a>
           <a
-            href="https://epileptric-2aac3.firebaseapp.com/"
+            href="https://epileptric-2aac3.web.app/#about"
             className="simple-text logo-normal"
           >
             Epileptric
