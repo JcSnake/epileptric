@@ -2,7 +2,9 @@ import React from 'react';
 
 import '../assets/sass/aboutcards.scss';
 import icon from '../assets/img/git.svg';
-import len from '../assets/img/len.jpg'
+import len from '../assets/img/len.jpg';
+import juan from '../assets/img/juan.jpg';
+import julio from '../assets/img/julio.jpg';
 
 class AboutProfile extends React.Component{
   
@@ -12,14 +14,14 @@ class AboutProfile extends React.Component{
                         job: 'CEO & Fundador',
                         details: 'La mente maestra detrás Epileptric',
                         git: 'https://github.com/JcSnake',
-                        pic: 'https://dummyimage.com/300x150/000/fff.png'
+                        pic: juan
                     },
                     {
                         name: 'Julio',
                         job: 'Desarrollador Front-End',
                         details: 'El hombre detrás del código',
                         git: 'https://github.com/Yulz22',
-                        pic: 'https://dummyimage.com/300x150/000/fff.png'
+                        pic: julio
                     },
                     {
                         name: 'Len',
