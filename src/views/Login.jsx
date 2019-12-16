@@ -30,7 +30,8 @@ class Login extends React.Component {
             console.log(user);
             alert('Bienvenido ');
             localStorage.setItem('uid', user.uid);
-            this.props.history.push('/dashboard');
+            window.location.href = '/admin/dashboard';
+            //this.props.history.push('/dashboard');
           }
         }
       });

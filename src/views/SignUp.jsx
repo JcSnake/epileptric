@@ -32,8 +32,8 @@ class SignUp extends React.Component {
             name, lastName, email
           });
 
-          this.props.history.push('/home');
-          alert("Registrado con éxito");
+          window.location.href = "/home";
+          alert("Registrado con éxito, verifica tu correo");
         }
       });
     } catch (e) {
